@@ -6,5 +6,5 @@
    
 2. Badges
    * [![Build Status](https://travis-ci.com/hannahbee123/is218_statcalc.svg?branch=master)](https://travis-ci.com/hannahbee123/is218_statcalc)
-   * add coveralls
+   * [![Coverage Status](https://coveralls.io/repos/github/hannahbee123/is218_statcalc/badge.svg?branch=master)](https://coveralls.io/github/hannahbee123/is218_statcalc?branch=master)
    
