@@ -1,15 +1,5 @@
-from src.calculator.operations import addition
-from src.calculator.operations import subtraction
-from src.calculator.operations import multiplication
-from src.calculator.operations import division
-from src.calculator.operations import square
-from src.calculator.operations import square_root
-from src.calculator.operations import mean_calc
-from src.calculator.operations import median_calc
-from src.calculator.operations import mode_calc
-from src.calculator.operations import std_dev
-from src.calculator.operations import variance
-from src.calculator.operations import z_score
+
+
 
 
 class MathOperations:
