@@ -1,11 +1,11 @@
 
-class Square:
+class Mean:
     result = 0
 
     def __init__(self):
         pass
 
     @staticmethod
-    def square(self, a):
-        self.result = a ** 2
+    def mean(self, values):
+        self.result = sum(values) / len(values)
         return self.result
