@@ -39,7 +39,7 @@ class Calculator:
         return self.result
 
     def square_root(self, a):
-        self.result = SquareRoot.result(self, a)
+        self.result = SquareRoot.square_root(self, a)
         return self.result
 
     def mean(self, values):
