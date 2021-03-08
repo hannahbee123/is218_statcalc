@@ -68,6 +68,8 @@ class CalculatorTestCase(unittest.TestCase):
 
     # def test_z_score_method_calculator(self):
 
+    # create unit tests for random generator functions
+
 
 if __name__ == "__main__":
     unittest.main()
