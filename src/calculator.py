@@ -4,12 +4,12 @@ from src.operations.multiplication import Multiplication
 from src.operations.subtraction import Subtraction
 from src.operations.square import Square
 from src.operations.square_root import SquareRoot
-from src.operations.mean import Mean
-from src.operations.median import Median
-from src.operations.std_dev import StandardDeviation
-from src.operations.mode import Mode
-from src.operations.variance import Variance
-from src.operations.z_score import ZScore
+from src.statistics.mean import Mean
+from src.statistics.median import Median
+from src.statistics.std_dev import StandardDeviation
+from src.statistics.mode import Mode
+from src.statistics.variance import Variance
+from src.statistics.z_score import ZScore
 
 
 class Calculator:
