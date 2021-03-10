@@ -23,8 +23,7 @@ class Mode:
                 if counter.get(num) == highest_repeat:
                     mode.append(num)
         else:
-            self.result = mode
-            return mode
+            return None
 
         self.result = mode
         return self.result

@@ -1,6 +1,6 @@
 import unittest
 
-from calculator import Calculator
+from src.calculator import Calculator
 
 
 class CalculatorTestCase(unittest.TestCase):
@@ -50,9 +50,17 @@ class CalculatorTestCase(unittest.TestCase):
         self.assertEqual(calculator.mean(test_list), 6)
         self.assertEqual(calculator.result, 6)
 
-    # def test_median_method_calculator(self):
+    def test_median_method_calculator(self):
+        calculator = Calculator()
+        test_list = [4, 4, 1, 2, 6, 12, 13]
+        self.assertEqual(calculator.median(test_list), 4)
+        self.assertEqual(calculator.result, 4)
 
-    # def test_mode_method_calculator(self):
+    def test_mode_method_calculator(self):
+        calculator = Calculator()
+        test_list = [4, 4, 1, 2, 6, 12, 13]
+        self.assertEqual(calculator.mode(test_list), [4])
+        self.assertEqual(calculator.result, [4])
 
     def test_std_dev_method_calculator(self):
         calculator = Calculator()
@@ -66,8 +74,12 @@ class CalculatorTestCase(unittest.TestCase):
         self.assertEqual(calculator.variance(test_list), 19.142857142857142)
         self.assertEqual(calculator.result, 19.142857142857142)
 
-    # def test_z_score_method_calculator(self):
-
+    def test_z_score_method_calculator(self):
+        calculator = Calculator()
+        test_list = [4, 4, 1, 2, 6, 12, 13]
+        test_score = 10
+        self.assertEqual(calculator.z_score(test_list, test_score), 0.91423)
+        self.assertEqual(calculator.result, 0.91423)
 
 if __name__ == "__main__":
     unittest.main()
