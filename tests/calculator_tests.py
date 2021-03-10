@@ -1,6 +1,7 @@
 import unittest
 
 from calculator import Calculator
+from random_generator import RandomGenerator
 
 
 class CalculatorTestCase(unittest.TestCase):
