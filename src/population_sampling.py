@@ -33,6 +33,6 @@ class PopulationSampling:
         margin_err = 1.96 * (std_dev / calculator.square_root(n))
         print('The confidence interval is' + mean + '+/-' + margin_err)
 
-    # TO DO:
+    # TO DO (juan):
     # cochran sample size formula
     # find sample size given confidence interval and width (unknown population std dev)
