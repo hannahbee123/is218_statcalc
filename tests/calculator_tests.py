@@ -81,5 +81,6 @@ class CalculatorTestCase(unittest.TestCase):
         self.assertEqual(calculator.z_score(test_list, test_score), 0.91423)
         self.assertEqual(calculator.result, 0.91423)
 
+
 if __name__ == "__main__":
     unittest.main()
