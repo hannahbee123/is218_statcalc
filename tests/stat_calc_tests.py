@@ -23,18 +23,16 @@ class StatCalculatorTestCase(unittest.TestCase):
         self.assertEqual(calculator.result, mean)
         test_list.clear()
 
-    '''
-    ***NOT WORKING***
-    
+
     def test_median_method_calculator(self):
         calculator = Calculator()
         random_generator = RandomGenerator()
         test_list = random_generator.rand_list(self, 0, 100, 5, 3)
-        # median = calculator.median(test_list)
-        # self.assertEqual(calculator.median(test_list), median)
-        # self.assertEqual(calculator.result, median)
-        # test_list.clear()
-    '''
+        median = calculator.median(test_list)
+        self.assertEqual(calculator.median(test_list), median)
+        self.assertEqual(calculator.result, median)
+        test_list.clear()
+
 
     def test_mode_method_calculator(self):
         calculator = Calculator()
