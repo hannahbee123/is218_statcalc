@@ -7,10 +7,10 @@ class PopulationSampling:
         pass
 
     @staticmethod
-    def simple_rand(self, lst):
-        # this method selects 10 random values from a list using 5 as a seed
+    def simple_rand(self, lst, n, s):
+        # this method selects n random values from a list using s as a seed
         random_generator = RandomGenerator()
-        simple_random_sample = random_generator.rand_choices_seed(self, lst, 10, 5)
+        simple_random_sample = random_generator.rand_choices_seed(self, lst, n, s)
         return simple_random_sample
 
     @staticmethod
@@ -31,7 +31,8 @@ class PopulationSampling:
         n = len(lst)
         mean = calculator.mean(lst)
         margin_err = 1.96 * (std_dev / calculator.square_root(n))
-        print('The confidence interval is' + mean + '+/-' + margin_err)
+        confidence_int = [round(mean+margin_err, 6), round(mean-margin_err, 6)]
+        return confidence_int
 
     @staticmethod
     def cochran_formula(self, lst, p):
