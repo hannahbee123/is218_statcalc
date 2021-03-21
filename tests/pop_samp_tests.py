@@ -33,3 +33,15 @@ class PopulationSamplingTestCase(unittest.TestCase):
         self.assertEqual(self.pop_sampling.confidence_interval(self, test_list), [7.236564, 3.763436])
         test_list.clear()
 
+    def test_cochran_formula(self):
+        test_list = self.random_generator.rand_list(self, 1, 100, 1000, 5)
+        self.assertEqual(self.pop_sampling.cochran_formula(self, test_list, .5), 437)
+        test_list.clear()
+
+    def test_confidence_width(self):
+        width = .06
+        self.assertEqual(self.pop_sampling.confidence_width(self, width, .41), 1033)
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -49,10 +49,10 @@ class PopulationSampling:
         std_dev = calculator.standard_dev(lst)
         n = len(lst)
         z = 1.96
-        margin_err = z * (std_dev / calculator.square_root(n))
+        margin_err = (z * (std_dev / calculator.square_root(n))) * .02
         n0 = round(((z ** 2)*p*(1-p))/(margin_err ** 2))
         if n < 10000:  # checks if the population is small
-            return round(n0/(1+(n0-1/n)))
+            return round(n0/(1+(n0-1)/n))
         else:
             return n0
 
